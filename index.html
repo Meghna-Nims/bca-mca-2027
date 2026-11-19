@@ -1077,7 +1077,7 @@
 
     <div class="row faculty-row justify-content-center align-items-end g-3 g-lg-4">
 
-      <div class="col-6 col-md faculty-col faculty-pos-1 high-faculty">
+      <!-- <div class="col-6 col-md faculty-col faculty-pos-1 high-faculty">
         <div class="faculty-card" data-profile="profile-priyanka">
           <img src="images/priyanka-kaushik.webp" alt="Prof. Priyanka Kaushik" loading="lazy">
           <div class="faculty-info">
@@ -1092,7 +1092,7 @@
 </a>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="col-6 col-md faculty-col faculty-pos-2">
         <div class="faculty-card" data-profile="profile-kuldeep">
@@ -1522,7 +1522,7 @@
 <div class="faculty-profile-data">
 
   <!-- 01. PROF. PRIYANKA KAUSHIK -->
-  <div id="profile-priyanka" class="faculty-profile">
+  <!-- <div id="profile-priyanka" class="faculty-profile">
     <div class="profile-left">
   <svg aria-hidden="true" class="mentor-portrait-shield"
        viewBox="0 0 320 400">
@@ -1578,7 +1578,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
   <!-- 02. PROF. KULDEEP S RATHORE -->
@@ -3010,21 +3010,29 @@
 </div>
 <!-- FACULTY PROFILE MODAL -->
 
-
-
-<div class="faculty-modal" id="facultyModal">
+<div class="faculty-modal" id="facultyModal" aria-hidden="true">
   <div class="faculty-modal-overlay"></div>
 
-  <div class="faculty-modal-content">
-    <button
-      type="button"
-      class="faculty-modal-close"
-      aria-label="Close Profile"
-    >
+  <div class="faculty-modal-content" role="dialog" aria-modal="true" aria-label="Faculty profile">
+
+    <button type="button" class="faculty-modal-close" aria-label="Close Profile">
       &times;
     </button>
 
     <div class="faculty-modal-inner" id="facultyModalBody"></div>
+
+    <div class="faculty-modal-navigation">
+      <button type="button" class="faculty-modal-prev" aria-label="Previous Faculty">
+        <span>&larr;</span> Previous
+      </button>
+
+      <span class="faculty-modal-counter"></span>
+
+      <button type="button" class="faculty-modal-next" aria-label="Next Faculty">
+        Next <span>&rarr;</span>
+      </button>
+    </div>
+
   </div>
 </div>
 

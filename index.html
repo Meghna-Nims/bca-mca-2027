@@ -908,25 +908,43 @@
       &times;
     </button>
 
-    <div class="facility-popup">
+    
+<div class="facility-popup">
 
-      <div class="facility-popup-image">
+    <!-- Previous Facility -->
+    <button
+        type="button"
+        class="facility-modal-nav facility-modal-prev"
+        aria-label="Previous facility">
+        <i class="bi bi-chevron-left"></i>
+    </button>
+
+    <!-- Next Facility -->
+    <button
+        type="button"
+        class="facility-modal-nav facility-modal-next"
+        aria-label="Next facility">
+        <i class="bi bi-chevron-right"></i>
+    </button>
+
+    <div class="facility-popup-image">
         <img src="" alt="" id="facilityLightboxImage">
-      </div>
+    </div>
 
-      <div class="facility-popup-content">
+    <div class="facility-popup-content">
         <span class="facility-popup-category" id="facilityPopupCategory">
-          CAMPUS FACILITY
+            CAMPUS FACILITY
         </span>
 
         <h2 id="facilityPopupTitle">Facility Name</h2>
 
         <p id="facilityPopupDescription"></p>
 
-       
-      </div>
-
+        <div class="facility-popup-count" id="facilityPopupCount"></div>
     </div>
+
+</div>
+
   </div>
 
 </section>

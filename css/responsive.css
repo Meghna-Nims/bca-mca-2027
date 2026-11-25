@@ -2981,6 +2981,7 @@
   /* ftu */
   .dual-degree-title{font-size:clamp(32px,8.5vw,39px);letter-spacing:.5px}
   .dual-degree-title>span::after{width:65px;height:48px;margin-left:2px}
+  .dual-degree-collage{margin-top:10px;}
   .dual-degree-collage>img{height:220px}
   .dual-degree-universities img{width:220px;height:50px}
   .sunshine-banner{height:95px;margin:50px 0 28px;border-radius:45px}
